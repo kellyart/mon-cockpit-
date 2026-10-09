@@ -1,0 +1,32 @@
+<!doctype html><html lang="fr" data-theme="system"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mon Cockpit</title><meta name="theme-color" content="#1d4ed8">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="css/app.css"></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></symbol>
+<symbol id="i-p" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-tasks" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="i-notes" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M9 13h7M9 17h7"/></symbol>
+<symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></symbol>
+<symbol id="i-history" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-files" viewBox="0 0 24 24"><path d="M21 11l-8.5 8.5a5 5 0 0 1-7-7L14 4a3.5 3.5 0 0 1 5 5l-8.5 8.5a2 2 0 0 1-3-3L15 7"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol></defs></svg>
+<a class="skip" href="#app" onclick="document.getElementById('app').focus();return false">Aller au contenu</a>
+<nav aria-label="Navigation principale"><span class="logo"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg>Mon Cockpit</span>
+<a data-r="home" href="#/"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><span>Accueil</span></a>
+<a data-r="p" href="#/p/cours"><svg class="ic" aria-hidden="true"><use href="#i-p"/></svg><span>Projets</span></a>
+<a data-r="tasks" href="#/tasks"><svg class="ic" aria-hidden="true"><use href="#i-tasks"/></svg><span>Tâches</span></a>
+<a data-r="notes" href="#/notes"><svg class="ic" aria-hidden="true"><use href="#i-notes"/></svg><span>Notes</span></a>
+<a data-r="history" class="d-only" href="#/history"><svg class="ic" aria-hidden="true"><use href="#i-history"/></svg><span>Historique</span></a>
+<a data-r="files" class="d-only" href="#/files"><svg class="ic" aria-hidden="true"><use href="#i-files"/></svg><span>Fichiers</span></a>
+<a data-r="settings" class="d-only" href="#/settings"><svg class="ic" aria-hidden="true"><use href="#i-settings"/></svg><span>Paramètres</span></a>
+<a data-r="more" class="m-only" href="#/more"><svg class="ic" aria-hidden="true"><use href="#i-more"/></svg><span>Plus</span></a></nav>
+<form id="sf" role="search" onsubmit="return false"><label class="sr" for="q">Recherche globale</label><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><input id="q" type="search" placeholder="Rechercher dans le cockpit"></form>
+<main id="app" tabindex="-1"></main><div id="saved" role="status" aria-live="polite"></div>
+<script src="js/db.js"></script><script src="js/app.js"></script><script src="js/work.js"></script><script src="js/files.js"></script><script src="js/search.js"></script><script src="js/lock.js"></script><script src="js/backup.js"></script></body></html>
